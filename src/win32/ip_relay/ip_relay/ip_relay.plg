@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: lib_ip_relay - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ralao\LOCALS~1\Temp\RSP2D4.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/lib_ip_relay.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"C:\Documents and Settings\ralao\My Documents\My src\ip_relay\ws\lib_ip_relay.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ralao\LOCALS~1\Temp\RSP2D4.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Debug\lib_ip_relay.lib"  ".\Debug\lib_ip_relay.obj" "
+<h3>Output Window</h3>
+Compiling...
+lib_ip_relay.c
+Creating library...
+<h3>
+--------------------Configuration: ip_relay - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ralao\LOCALS~1\Temp\RSP2D5.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/ip_relay.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"C:\Documents and Settings\ralao\My Documents\My src\ip_relay\ws\ip_relay.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ralao\LOCALS~1\Temp\RSP2D5.tmp" 
+Creating temporary file "C:\DOCUME~1\ralao\LOCALS~1\Temp\RSP2D6.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Ws2_32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/ip_relay.pdb" /debug /machine:I386 /out:"Debug/ip_relay.exe" /pdbtype:sept 
+".\Debug\ip_relay.obj"
+"\DOCUMENTS AND SETTINGS\RALAO\MY DOCUMENTS\MY SRC\IP_RELAY\WS\WIN32\ip_relay\lib_ip_relay\Debug\lib_ip_relay.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\ralao\LOCALS~1\Temp\RSP2D6.tmp"
+<h3>Output Window</h3>
+Compiling...
+ip_relay.c
+Linking...
+
+
+
+<h3>Results</h3>
+ip_relay.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,286 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\WinIpRelay.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\WinIpRelay.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 194, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About WinIpRelay"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,40,9,21,20
+    LTEXT           "WinIpRelay Version 1.0.1",IDC_STATIC,74,16,81,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003 - 2004 - Voodoo Technologies",
+                    IDC_STATIC,20,35,155,8
+    DEFPUSHBUTTON   "OK",IDOK,75,138,44,14,WS_GROUP
+    CTEXT           "WinIpRelay is brought to you by Voodoo Technologies, a software development and consulting firm. ",
+                    IDC_STATIC,14,51,165,25
+    CTEXT           "Visit  http://www.voodootechs.com or send an email to info@voodootechs.com ",
+                    IDC_STATIC,14,81,165,18
+    CTEXT           "For all you software development and consulting needs in Networking, embedded systems and Interactive DigitalTV solutions.",
+                    IDC_STATIC,15,104,165,24
+END
+
+IDD_WINIPRELAY_DIALOG DIALOGEX 0, 0, 400, 235
+STYLE DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "WinIpRelay"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_RELAY_LIST,12,18,143,142,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Add Relay",IDC_ADD_RELAY,21,164,50,14
+    PUSHBUTTON      "&Delete Relay",IDC_DELETE_RELAY,87,163,50,14
+    PUSHBUTTON      "Sa&ve Logs",IDC_SAVE_LOGS,223,164,50,14
+    PUSHBUTTON      "&Clear Logs",IDC_CLEAR_LOGS,291,164,50,14
+    PUSHBUTTON      "&Load Config",IDC_LOAD_CONFIG,24,210,50,14
+    PUSHBUTTON      "&Save Config",IDC_SAVE_CONFIG,87,210,50,14
+    PUSHBUTTON      "A&bout Us",IDC_ABOUT_US,224,209,50,14
+    GROUPBOX        "Relay list",IDC_STATIC,7,7,154,179
+    GROUPBOX        "Logs",IDC_STATIC,168,7,225,179
+    EDITTEXT        IDC_CONFIG_NAME,13,194,142,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "",IDC_STATIC,7,185,153,43
+    PUSHBUTTON      "&Quit",IDOK,293,209,50,14
+    CONTROL         "",IDC_LOGS,"RICHEDIT",ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_BORDER | WS_VSCROLL | 
+                    WS_HSCROLL,172,17,217,143
+    CTEXT           "Copyright (C) 2003 - 2004 - Voodoo Technologies ",
+                    IDC_COPYRIGHT,180,195,206,8,SS_CENTERIMAGE
+END
+
+IDD_ADD_RELAY_DIALOG DIALOG DISCARDABLE  0, 0, 149, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Relay Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,14,90,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,79,90,50,14
+    LTEXT           "Local Port:",IDC_STATIC,14,16,35,8
+    EDITTEXT        IDC_RELAY_LOCAL_PORT,63,14,71,14,ES_AUTOHSCROLL
+    LTEXT           "Remote Host:",IDC_STATIC,14,34,44,8
+    EDITTEXT        IDC_RELAY_REMOTE_HOST,63,31,71,14,ES_AUTOHSCROLL
+    LTEXT           "Remote Port:",IDC_STATIC,14,51,42,8
+    EDITTEXT        IDC_RELAY_REMOTE_PORT,63,48,71,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,7,7,135,78
+    LTEXT           "Connection Timeout (s):",IDC_STATIC,13,68,76,8
+    EDITTEXT        IDC_RELAY_TIMEOUT,98,65,36,14,ES_AUTOHSCROLL
+END
+
+IDD_REGISTRATION_DIALOG DIALOG DISCARDABLE  0, 0, 288, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registration..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,84,73,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,153,73,50,14
+    EDITTEXT        IDC_REG_FILENAME,23,20,182,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse",IDC_REG_BROWSE,214,20,50,14
+    LTEXT           "To register please visit: ",IDC_STATIC,20,59,75,8
+    LTEXT           "http://www.voodootechs.com/winiprelay/registration/",
+                    IDC_REG_URL_LINK,98,59,171,8,WS_TABSTOP
+    GROUPBOX        "Registration File",IDC_STATIC,18,7,254,35
+    LTEXT           "Registration status:",IDC_STATIC,71,47,61,8
+    LTEXT           "Unregistered - 1/90 days",IDC_REG_STATUS,136,47,79,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Voodoo Technologies\0"
+            VALUE "FileDescription", "WinIpRelay Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "WinIpRelay\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003-2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "WinIpRelay.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "WinIpRelay Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_WINIPRELAY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+
+    IDD_ADD_RELAY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_REGISTRATION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About WinIpRelay..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\WinIpRelay.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

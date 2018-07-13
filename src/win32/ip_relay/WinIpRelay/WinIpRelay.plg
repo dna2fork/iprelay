@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: lib_ip_relay - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ralao\LOCALS~1\Temp\RSPEF2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_AFXDLL" /Fp"Debug/lib_ip_relay.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\ralao\My Documents\My src\ip_relay\packages\ip_relay_1.1\src\lib_ip_relay.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ralao\LOCALS~1\Temp\RSPEF2.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Debug\lib_ip_relay.lib"  ".\Debug\lib_ip_relay.obj" "
+<h3>Output Window</h3>
+Compiling...
+lib_ip_relay.c
+Creating library...
+<h3>
+--------------------Configuration: WinIpRelay - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/WinIpRelay.res" /d "_DEBUG" /d "_AFXDLL" "C:\Documents and Settings\ralao\My Documents\My src\ip_relay\packages\ip_relay_1.1\src\win32\ip_relay\WinIpRelay\WinIpRelay.rc"" 
+Creating temporary file "C:\DOCUME~1\ralao\LOCALS~1\Temp\RSPEF3.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\..\..\..\license_lib" /I "..\..\..\\" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/WinIpRelay.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\ralao\My Documents\My src\ip_relay\packages\ip_relay_1.1\src\win32\ip_relay\WinIpRelay\RegistrationDialog.cpp"
+"C:\Documents and Settings\ralao\My Documents\My src\ip_relay\packages\ip_relay_1.1\src\win32\ip_relay\WinIpRelay\RelayDialog.cpp"
+"C:\Documents and Settings\ralao\My Documents\My src\ip_relay\packages\ip_relay_1.1\src\win32\ip_relay\WinIpRelay\WinIpRelay.cpp"
+"C:\Documents and Settings\ralao\My Documents\My src\ip_relay\packages\ip_relay_1.1\src\win32\ip_relay\WinIpRelay\WinIpRelayDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ralao\LOCALS~1\Temp\RSPEF3.tmp" 
+Creating temporary file "C:\DOCUME~1\ralao\LOCALS~1\Temp\RSPEF4.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\..\..\..\license_lib" /I "..\..\..\\" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/WinIpRelay.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\ralao\My Documents\My src\ip_relay\packages\ip_relay_1.1\src\win32\ip_relay\WinIpRelay\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ralao\LOCALS~1\Temp\RSPEF4.tmp" 
+Creating temporary file "C:\DOCUME~1\ralao\LOCALS~1\Temp\RSPEF5.tmp" with contents
+[
+Ws2_32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/WinIpRelay.pdb" /debug /machine:I386 /out:"Debug/WinIpRelay.exe" /pdbtype:sept 
+".\Debug\RegistrationDialog.obj"
+".\Debug\RelayDialog.obj"
+".\Debug\StdAfx.obj"
+".\Debug\WinIpRelay.obj"
+".\Debug\WinIpRelayDlg.obj"
+".\Debug\WinIpRelay.res"
+"\Documents and Settings\ralao\My Documents\My src\ip_relay\packages\ip_relay_1.1\src\win32\ip_relay\lib_ip_relay\Debug\lib_ip_relay.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\ralao\LOCALS~1\Temp\RSPEF5.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+RegistrationDialog.cpp
+RelayDialog.cpp
+WinIpRelay.cpp
+WinIpRelayDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+WinIpRelay.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
