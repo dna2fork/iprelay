@@ -15,6 +15,7 @@
  +---------------------------------------------------*/
 #include "lib_ip_relay.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /*---------------------------------------------------
  |     Constant Definitions below this line      
